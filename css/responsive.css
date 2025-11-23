@@ -4,6 +4,7 @@
 
 @media (max-width: 992px) {
   .hero_area {
+    height: auto;
     min-height: auto;
   }
 
@@ -22,48 +23,240 @@
   .custom_nav-container .navbar-nav {
     padding-top: 15px;
     align-items: center;
+    background-color: #00204a;
+    padding: 10px;
+    border-radius: 5px;
   }
-
 
   .custom_nav-container .navbar-nav .nav-item .nav-link {
     padding: 5px 25px;
     margin: 5px 0;
   }
 
+  .navbar-brand span {
+    font-size: 18px;
+  }
 
+  .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+  }
+
+  .container-fluid {
+    padding: 0 15px;
+  }
+
+  .info_section .info_col {
+    margin: 15px 0;
+  }
+
+  .footer_section {
+    padding: 20px 0;
+  }
+
+  .map_container iframe {
+    height: 350px;
+  }
+
+  /* Logo grid responsive */
+  .logo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .logo-kart {
+    padding: 10px;
+  }
+
+  .logo-kart p {
+    font-size: 14px;
+  }
+
+  /* Service boxes responsive */
+  .service_section .box {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .why_container .box {
+    margin-bottom: 20px;
+  }
+
+  .detail-box h5 {
+    font-size: 18px;
+  }
+
+  .detail-box p {
+    font-size: 14px;
+  }
+}
+
+/* Service and Why Section Responsive Fixes */
+@media (max-width: 992px) {
+  .service_container .box,
+  .why_container .box {
+    margin: 15px 0;
+  }
+
+  .service_section,
+  .why_section {
+    padding: 45px 0;
+  }
+
+  .service_section .container,
+  .why_section .container {
+    padding: 0 15px;
+  }
+
+  .service_container .box .img-box img,
+  .why_container .box .img-box img {
+    max-width: 80px;
+    height: auto;
+  }
+
+  .box {
+    padding: 20px;
+  }
+
+  .detail-box {
+    text-align: center;
+  }
+
+  .detail-box h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .detail-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 768px) {
+  .navbar-brand span {
+    font-size: 16px;
+  }
+
+  .logo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .logo-kart {
+    padding: 8px;
+  }
+
+  .logo-kart p {
+    font-size: 12px;
+  }
+
+  .info_section {
+    padding: 30px 0;
+  }
+
+  .info_col {
+    text-align: center;
+  }
+
+  .info_social {
+    justify-content: center;
+  }
+
+  .map_container iframe {
+    height: 300px;
+  }
+
+  .heading_container h2 {
+    font-size: 24px;
+  }
+
+  .heading_container p {
+    font-size: 14px;
+  }
+
   .about_section .img-box {
     margin-bottom: 45px;
   }
 
-}
-
-@media (max-width: 576px) {
-  .header_section .header_top .contact_nav a span {
-    display: none;
+  .service_container .box,
+  .why_container .box {
+    margin: 10px 0;
   }
 
-
-  .client_section .client_container {
+  .why_container,
+  .service_container {
+    overflow-x: hidden;
     width: 100%;
   }
 
-  .client_section .box {
-    margin: 0;
+  .service_section .heading_container h2,
+  .why_section .heading_container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
   }
 
-  .owl-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
+  .service_section .heading_container p,
+  .why_section .heading_container p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 10px;
   }
 
-  .client_section .owl-carousel .owl-nav .owl-prev,
-  .client_section .owl-carousel .owl-nav .owl-next {
-    position: unset;
-    margin: 0 2.5px;
+  .logo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 8px;
+  }
+
+  .service_section .box {
+    padding: 10px;
+  }
+
+  .info_contact h4,
+  .info_detail h4,
+  .info_link_box h4 {
+    font-size: 18px;
+  }
+
+  .contact_link_box a span {
+    font-size: 13px;
+  }
+
+  .map_container iframe {
+    height: 250px;
+  }
+
+  .footer_section p {
+    font-size: 12px;
+  }
+
+  .service_container .box,
+  .why_container .box {
+    padding: 15px 10px;
+  }
+
+  .service_section .container,
+  .why_section .container {
+    padding: 0 10px;
+  }
+
+  .box .img-box {
+    margin-bottom: 15px;
+  }
+
+  .service_section,
+  .why_section {
+    padding: 30px 0;
   }
 }
 

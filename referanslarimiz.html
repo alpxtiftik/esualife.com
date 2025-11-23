@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Basic -->
   <meta charset="utf-8" />
   <meta https-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
   <meta name="keywords" content="esualife, su arıtma, eskişehir su arıtma" />
-  <meta name="description" content="eskişehir su arıtma" />
+  <meta name="description" content="ESUA Life olarak Eskişehir'de tamamladığımız su arıtma projeleri ve mutlu müşterilerimiz. Ev ve iş yeri referanslarımızı ve yorumlarını inceleyin.">
   <meta name="author" content="alpxtiftik" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title>ESUA Life - Referanslarımız</title>
+  <title>Referanslarımız | ESUA Life Eskişehir Su Arıtma</title>
   
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
-  <!-- Lightbox CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 
-  <!-- Custom styles -->
   <style>
     .header_section {
       background-color: #00204a;
@@ -40,28 +38,122 @@
     .navbar-brand span {
       color: #ffffff !important;
     }
+
+    /* Referanslar Bölümü Özel Stil */
+    .referanslar-bolumu {
+      padding: 60px 0;
+      background-color: #f9f9f9;
+    }
+
+    .bolum-basligi {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #00204a;
+    }
+
+    .logo-konteyneri {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; /* Dikey hizalamayı ekledim */
+    }
+
+    .referans-logo {
+      max-width: 150px;
+      margin: 15px;
+      transition: transform 0.3s;
+    }
+
+    .referans-logo:hover {
+      transform: scale(1.1);
+    }
+
+    .logo-alt-yazisi {
+      display: block;
+      text-align: center;
+      margin-top: 5px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .logo-icerik {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Yeni Grid ve Kart Stilleri */
+    .referanslar {
+      padding: 60px 0;
+      background-color: #f9f9f9;
+    }
+
+    .section-basligi {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #00204a;
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .logo-kart {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .logo-kart:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo-kart img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .logo-kart p {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+    }
   </style>
 </head>
 
 <body class="sub_page">
   <div class="hero_area">
-    <!-- Header section -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <span>ESUA Life</span>
+            <span>Eskişehir Su Arıtma Teknolojileri - ESUA Life</span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class=""></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
-              <li class="nav-item"><a class="nav-link" href="about.html">Hakkımızda</a></li>
-              <li class="nav-item active"><a class="nav-link" href="referanslarimiz.html">Referanslarımız</a></li>
-              <li class="nav-item"><a class="nav-link" href="service.html">Ürünler & Çözümler</a></li>
-              <li class="nav-item"><a class="nav-link" href="why.html">Neden Biz ?</a></li>
+              <li class="nav-item"><a class="nav-link" href="/">Ana Sayfa</a></li>
+              <li class="nav-item"><a class="nav-link" href="/hakkimizda">Hakkımızda</a></li>
+              <li class="nav-item active"><a class="nav-link" href="/referanslarimiz">Referanslarımız</a></li>
+              <li class="nav-item"><a class="nav-link" href="/urunlervecozumler">Ürünler & Çözümler</a></li>
+              <li class="nav-item"><a class="nav-link" href="/nedenbiz">Neden Biz</a></li>
+              <li class="nav-item"><a class="nav-link" href="/iletisim">İletişim</a></li>
             </ul>
           </div>
         </nav>
@@ -69,158 +161,113 @@
     </header>
   </div>
 
-  <!-- Referanslar Section -->
-  <section class="layout_padding">
-    <div class="container" style="margin-bottom: 50px;">
-      <div class="heading_container heading_center" style="margin-bottom: 25px;">
-        <h2>Referanslarımız</h2>
-      </div>
-      
-      <!-- Logo banner -->
-      <div class="banner-image mb-5" style="width: 100%; text-align: center;">
-        <img src="images/logolar.jpg" alt="Referans Logolar" style="width: 90%; height: auto; display: inline-block;">
-      </div>
-
-      <div class="row gallery">
-        <!-- Referans kartları -->
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans1.png" data-lightbox="referanslar" data-title="Referans 1">
-            <div class="card">
-              <img src="images/referans1.png" class="card-img-top" alt="Referans 1">
-            </div>
-          </a>
+  <section class="referanslar">
+    <div class="container">
+      <h2 class="section-basligi">Referanslarımız & Bize Güvenen Markalar</h2>
+      <div class="logo-grid">
+        <div class="logo-kart">
+          <img src="images/777_kafe.png" alt="777 Kafe">
+          <p>777 Kafe</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans2.png" data-lightbox="referanslar" data-title="Referans 2">
-            <div class="card">
-              <img src="images/referans2.png" class="card-img-top" alt="Referans 2">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/arti_sanat.png" alt="Artı Sanat">
+          <p>Artı Sanat</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans3.png" data-lightbox="referanslar" data-title="Referans 3">
-            <div class="card">
-              <img src="images/referans3.png" class="card-img-top" alt="Referans 3">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/atlantik.png" alt="Atlantik">
+          <p>Atlantik</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans4.png" data-lightbox="referanslar" data-title="Referans 4">
-            <div class="card">
-              <img src="images/referans4.png" class="card-img-top" alt="Referans 4">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/aura_clean.png" alt="Aura Clean & Detailing">
+          <p>Aura Clean & Detailing</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans5.png" data-lightbox="referanslar" data-title="Referans 5">
-            <div class="card">
-              <img src="images/referans5.png" class="card-img-top" alt="Referans 5">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/aydin_ticaret.png" alt="Aydın Ticaret">
+          <p>Aydın Ticaret</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans6.png" data-lightbox="referanslar" data-title="Referans 6">
-            <div class="card">
-              <img src="images/referans6.png" class="card-img-top" alt="Referans 6">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/bremen_kafe.png" alt="Bremen Kafe">
+          <p>Bremen Kafe</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans7.png" data-lightbox="referanslar" data-title="Referans 7">
-            <div class="card">
-              <img src="images/referans7.png" class="card-img-top" alt="Referans 7">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/burger_king.png" alt="Burger King">
+          <p>Burger King</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans8.png" data-lightbox="referanslar" data-title="Referans 8">
-            <div class="card">
-              <img src="images/referans8.png" class="card-img-top" alt="Referans 8">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/english_house.png" alt="English House">
+          <p>English House</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans9.png" data-lightbox="referanslar" data-title="Referans 9">
-            <div class="card">
-              <img src="images/referans9.png" class="card-img-top" alt="Referans 9">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/esgaz.png" alt="Esgaz">
+          <p>Esgaz</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans10.png" data-lightbox="referanslar" data-title="Referans 10">
-            <div class="card">
-              <img src="images/referans10.png" class="card-img-top" alt="Referans 10">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/eskisehir_ilgoc.png" alt="Eskişehir İl Göç İdaresi">
+          <p>Eskişehir İl Göç İdaresi</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans11.png" data-lightbox="referanslar" data-title="Referans 11">
-            <div class="card">
-              <img src="images/referans11.png" class="card-img-top" alt="Referans 11">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/estu.png" alt="ESTÜ">
+          <p>ESTÜ</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans12.png" data-lightbox="referanslar" data-title="Referans 12">
-            <div class="card">
-              <img src="images/referans12.png" class="card-img-top" alt="Referans 12">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/kiosk_coffe.png" alt="Kiosk Coffe">
+          <p>Kiosk Coffe</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans13.png" data-lightbox="referanslar" data-title="Referans 13">
-            <div class="card">
-              <img src="images/referans13.png" class="card-img-top" alt="Referans 13">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/kovamda_manti.png" alt="Kovamda Mantı">
+          <p>Kovamda Mantı</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans14.png" data-lightbox="referanslar" data-title="Referans 14">
-            <div class="card">
-              <img src="images/referans14.png" class="card-img-top" alt="Referans 14">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/lavie_kafe.png" alt="Laviè Kafe">
+          <p>Laviè Kafe</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans15.png" data-lightbox="referanslar" data-title="Referans 15">
-            <div class="card">
-              <img src="images/referans15.png" class="card-img-top" alt="Referans 15">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/odunpazari_sydv.png" alt="Odunpazarı SYDV">
+          <p>Odunpazarı SYDV</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans16.png" data-lightbox="referanslar" data-title="Referans 16">
-            <div class="card">
-              <img src="images/referans16.png" class="card-img-top" alt="Referans 16">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/oncu_doner.png" alt="Öncü Döner">
+          <p>Öncü Döner</p>
         </div>
-        <div class="col-md-4 col-sm-6 mb-4">
-          <a href="images/referans17.png" data-lightbox="referanslar" data-title="Referans 17">
-            <div class="card">
-              <img src="images/referans17.png" class="card-img-top" alt="Referans 17">
-            </div>
-          </a>
+        <div class="logo-kart">
+          <img src="images/ozel_anadolu.png" alt="Özel Anadolu Hastanesi" style="filter: invert(1) grayscale(100%) !important;">
+          <p>Özel Anadolu Hastanesi</p>
+        </div>
+        <div class="logo-kart">
+          <img src="images/parkplus_otopark.png" alt="Parkplus Otopark">
+          <p>Parkplus Otopark</p>
+        </div>
+        <div class="logo-kart">
+          <img src="images/popeyes_logo.png" alt="Popeyes">
+          <p>Popeyes</p>
+        </div>
+        <div class="logo-kart">
+          <img src="images/premium_sigorta.png" alt="Premium Sigorta">
+          <p>Premium Sigorta</p>
+        </div>
+        <div class="logo-kart">
+          <img src="images/serdivan_waffle.png" alt="Serdivan Waffle">
+          <p>Serdivan Waffle</p>
+        </div>
+        <div class="logo-kart">
+          <img src="images/tepebasi_sydv.png" alt="Tepebaşı SYDV">
+          <p>Tepebaşı SYDV</p>
+        </div>
+        <div class="logo-kart">
+          <img src="images/twinss_kafe.png" alt="Twinss Kafe">
+          <p>Twinss Kafe</p>
+        </div>
+        <div class="logo-kart">
+          <img src="images/village_kafe.png" alt="Village Coffee Co.">
+          <p>Village Coffee Co.</p>
+        </div>
+        <div class="logo-kart">
+          <img src="images/yogico.png" alt="Yogico">
+          <p>Yogico</p>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Sosyal Medya Section -->
-  <section class="layout_padding">
-    <div class="container" style="margin-bottom: 50px;">
-      <div class="heading_container heading_center" style="margin-bottom: 25px;">
-        <h2>Sosyal Medyada Biz</h2>
-      </div>
-      <div class="instagram-feed-container">
-        <!-- LightWidget WIDGET -->
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-        <iframe src="//lightwidget.com/widgets/8059e453ac4b5e99bc938956bbbb91b3.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- info section -->
   <section class="info_section layout_padding2">
     <div class="container">
       <div class="row">
@@ -276,10 +323,11 @@
             </h4>
             <div class="info_links">
               <a class="" href="index.html">Ana Sayfa</a>
-              <a class="" href="about.html">Hakkımızda</a>
+              <a class="" href="hakkimizda.html">Hakkımızda</a>
               <a class="active" href="referanslarimiz.html">Referanslarımız</a>
-              <a class="" href="service.html">Ürünler & Çözümler</a>
-              <a class="" href="why.html">Neden Biz ?</a>
+              <a class="" href="urunlervecozumler.html">Ürünler & Çözümler</a>
+              <a class="" href="nedenbiz.html">Neden Biz</a>
+              <a class="" href="iletisim.html">İletişim</a>
             </div>
           </div>
         </div>
@@ -292,24 +340,18 @@
     </div>
   </section>
 
-  <!-- end info section -->
-
-  <!-- footer section -->
   <section class="footer_section">
     <div class="container">
       <p>
-        &copy; <span id="displayYear"></span> Tüm Hakları Saklıdır - 
+        © <span id="displayYear"></span> Tüm Hakları Saklıdır - 
         <a href="https://github.com/alpxtiftik" target="_blank" rel="noreferrer noopener">alpxtiftik</a>
       </p>
     </div>
   </section>
-  <!-- footer section -->
-
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Lightbox JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,16 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# 1. KURAL: index.html'i ana sayfaya (/) yönlendir.
+RewriteRule ^index\.html$ / [R=301,L]
+
+# 2. KURAL: .html uzantısını adres çubuğundan kaldır.
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# 3. KURAL: .html'siz isteği (örn: /hakkimizda) sunucuda .html'li dosyaya çevir.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L,QSA]
