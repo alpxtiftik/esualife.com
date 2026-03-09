@@ -265,6 +265,55 @@ ul { list-style: none; margin: 0; padding: 0; }
 .logo-card p { margin: 0; font-size: 0.875rem; font-weight: 500; color: var(--color-text); }
 @media (max-width: 480px) { .logo-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 1rem; } }
 
+/* ----- Logo sliders (index) ----- */
+.logo-slider {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+.logo-slider-track {
+  display: flex;
+  gap: 1.25rem;
+  animation: logo-slide 35s linear infinite;
+}
+.logo-slider-track:hover {
+  animation-play-state: paused;
+}
+.logo-slider--corporate .logo-card {
+  flex: 0 0 18%;
+  min-width: 140px;
+}
+@media (max-width: 992px) {
+  .logo-slider--corporate .logo-card {
+    flex-basis: 24%;
+  }
+}
+@media (max-width: 600px) {
+  .logo-slider--corporate .logo-card {
+    flex-basis: 32%;
+  }
+}
+
+.logo-slider--family .logo-card {
+  flex: 0 0 32%;
+  min-width: 200px;
+}
+@media (max-width: 900px) {
+  .logo-slider--family .logo-card {
+    flex-basis: 48%;
+  }
+}
+@media (max-width: 600px) {
+  .logo-slider--family .logo-card {
+    flex-basis: 100%;
+  }
+}
+
+@keyframes logo-slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* ----- Service / Why cards (3 col) ----- */
 .cards-3 {
   display: grid;
@@ -365,6 +414,45 @@ ul { list-style: none; margin: 0; padding: 0; }
   max-height: 400px;
 }
 .map-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* ----- Family grids (referans görselleri) ----- */
+.family-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+@media (min-width: 1024px) {
+  .family-grid--wide {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .family-grid--wide {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 767px) {
+  .family-grid--wide {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.family-card {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.family-img-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.family-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 /* ----- Info footer (dark) ----- */
 .info-section {
